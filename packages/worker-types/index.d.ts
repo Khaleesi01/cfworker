@@ -9,4 +9,10 @@ interface JsonWebKey {
   n?: string;
 }
 
-type BodyInit = BodyInitializer;
+type BufferSource = ArrayBufferView | ArrayBuffer;
+
+declare function setTimeout(
+  handler: Function,
+  timeout?: number,
+  ...arguments: any[]
+): number;
